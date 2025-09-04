@@ -59,6 +59,13 @@
             margin-bottom: 50px;
         }
         
+        /* Override Kit form styles for better integration */
+        .formkit-form[data-uid="908bff4dc7"] {
+            box-shadow: none !important;
+            border: none !important;
+            background: transparent !important;
+        }
+        
         .testimonials {
             margin-top: 50px;
         }
@@ -112,26 +119,9 @@
         <p class="subtitle">Plus: Get my weekly 4-minute insights on landing High-Ticket clients without sales calls, read by 1,247+ consultants (unsubscribe anytime).</p>
         
         <div class="form-container">
-            <script async data-uid="908bff4dc7" src="https://the3hourszen.kit.com/908bff4dc7/index.js"></script>
-        </div>
-        
-        <div class="testimonials">
-            <div class="testimonial">
-                "Went from website designer to SaaS MVP - signed 15 clients using just this document" - <span class="author">Denis K., Product Developer</span>
-            </div>
-            
-            <div class="testimonial">
-                "Made $60k from email upsells alone" - <span class="author">Mark R., Coaching Service</span>
-            </div>
-            
-            <div class="testimonial">
-                "3 clients from dead leads I had" - <span class="author">Lisa K., Consultant</span>
-            </div>
-        </div>
-        
-        <div class="footer">
-            Your Business Name<br>
-            <a href="#">Privacy Policy</a>
+            <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+            <form action="https://app.kit.com/forms/8521800/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8521800" data-uid="908bff4dc7" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot
+
         </div>
     </div>
 </body>
