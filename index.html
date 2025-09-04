@@ -59,11 +59,31 @@
             margin-bottom: 50px;
         }
         
-        /* Override Kit form styles for better integration */
-        .formkit-form[data-uid="908bff4dc7"] {
-            box-shadow: none !important;
+        /* Fix the Kit form styling */
+        .formkit-input {
+            width: 100% !important;
+            padding: 15px !important;
+            font-size: 16px !important;
+            border-radius: 8px !important;
+            box-sizing: border-box !important;
+            margin-bottom: 15px !important;
+            border: 1px solid #ccc !important;
+        }
+
+        .formkit-submit {
+            width: 100% !important;
+            padding: 18px !important;
+            font-size: 16px !important;
+            background-color: #2c3e50 !important;
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            color: white !important;
             border: none !important;
-            background: transparent !important;
+            cursor: pointer !important;
+        }
+
+        .formkit-submit:hover {
+            background-color: #34495e !important;
         }
         
         .testimonials {
@@ -119,26 +139,7 @@
         <p class="subtitle">Plus: Get my weekly 4-minute insights on landing High-Ticket clients without sales calls, read by 1,247+ consultants (unsubscribe anytime).</p>
         
         <div class="form-container">
-            <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
-            <form action="https://app.kit.com/forms/8521800/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8521800" data-uid="908bff4dc7" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800">
-                <div data-style="clean">
-                    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
-                    <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
-                        <div class="formkit-field">
-                            <input class="formkit-input" name="email_address" aria-label="Email Address" placeholder="Email Address" required="" type="email" style="color: rgb(0, 0, 0); border-color: rgb(227, 227, 227); border-radius: 4px; font-weight: 400;">
-                        </div>
-                        <button data-element="submit" class="formkit-submit formkit-submit" style="color: rgb(255, 255, 255); background-color: rgb(22, 119, 190); border-radius: 4px; font-weight: 400;">
-                            <div class="formkit-spinner">
-                                <div></div><div></div><div></div>
-                            </div>
-                            <span class="">Subscribe</span>
-                        </button>
-                    </div>
-                    <div class="formkit-powered-by-convertkit-container">
-                        <a href="https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic" data-element="powered-by" class="formkit-powered-by-convertkit" data-variant="dark" target="_blank" rel="nofollow">Built with Kit</a>
-                    </div>
-                </div>
-            </form>
+            <script async data-uid="908bff4dc7" src="https://the3hourszen.kit.com/908bff4dc7/index.js"></script>
         </div>
         
         <div class="testimonials">
@@ -158,6 +159,11 @@
         <div class="footer">
             Your Business Name<br>
             <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</body>
+</html>
+
         </div>
     </div>
 </body>
