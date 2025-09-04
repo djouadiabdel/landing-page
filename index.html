@@ -10,154 +10,161 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
         }
-        
+
         .container {
-            max-width: 600px;
+            max-width: 430px;
             margin: 0 auto;
-            padding: 80px 40px;
+            padding: 60px 10px;
             text-align: center;
         }
-        
+
         .video-tag {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 30px;
-            border: 1px solid #ddd;
-            background: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            display: inline-block;
+            font-size: 15px;
+            color: #6a6a6a;
+            margin-bottom: 25px;
+            padding: 3px 10px;
+            background: #fff;
+            border-radius: 5px;
+            border: none;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
+
         h1 {
-            font-size: 42px;
+            font-size: 26px;
             font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 30px;
-            line-height: 1.2;
+            color: #233047;
+            margin-bottom: 18px;
+            line-height: 1.25;
+            letter-spacing: 0.1px;
         }
-        
+
         .subtitle {
-            font-size: 18px;
+            font-size: 16px;
             color: #555;
-            margin-bottom: 50px;
+            margin-bottom: 38px;
             line-height: 1.5;
+            max-width: 370px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
+
         .form-container {
             background: #ffffff;
-            padding: 50px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            margin-bottom: 50px;
+            padding: 32px 23px;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+            margin-bottom: 38px;
         }
-        
-        /* Fix Kit form styling */
         .formkit-input {
-            width: 100% !important;
-            padding: 15px !important;
-            font-size: 16px !important;
-            border-radius: 8px !important;
-            box-sizing: border-box !important;
-            margin-bottom: 15px !important;
-            border: 1px solid #ccc !important;
+            width: 100%;
+            padding: 13px;
+            font-size: 15px;
+            border-radius: 7px;
+            box-sizing: border-box;
+            margin-bottom: 13px;
+            border: 1px solid #ccc;
         }
-
         .formkit-submit {
-            width: 100% !important;
-            padding: 18px !important;
-            font-size: 16px !important;
-            background-color: #2c3e50 !important;
-            border-radius: 8px !important;
-            font-weight: 600 !important;
-            color: white !important;
-            border: none !important;
-            cursor: pointer !important;
+            width: 100%;
+            padding: 15px;
+            font-size: 15px;
+            background-color: #233047;
+            border-radius: 7px;
+            font-weight: 600;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .formkit-submit:hover {
+            background-color: #34495e;
         }
 
-        .formkit-submit:hover {
-            background-color: #34495e !important;
-        }
-        
         .testimonials {
-            margin-top: 50px;
+            margin-top: 30px;
+            margin-bottom: 15px;
         }
-        
+
         .testimonial {
             font-style: italic;
             color: #555;
-            margin-bottom: 25px;
-            font-size: 16px;
-            line-height: 1.5;
+            margin-bottom: 11px;
+            font-size: 14px;
+            line-height: 1.4;
+            max-width: 350px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
+
         .author {
             font-weight: 700;
             color: #333;
             font-style: normal;
         }
-        
+
         .footer {
-            margin-top: 50px;
+            margin-top: 36px;
             font-size: 12px;
             color: #999;
         }
-        
+
         .footer a {
             color: #999;
             text-decoration: none;
         }
-        
+
         @media (max-width: 768px) {
             .container {
-                padding: 40px 15px;
+                padding: 22px 4px;
+                max-width: 99vw;
             }
-            
             h1 {
-                font-size: 32px;
+                font-size: 18px;
             }
-            
             .form-container {
-                padding: 30px 20px;
+                padding: 17px 12px;
+            }
+            .subtitle {
+                font-size: 14px;
+                max-width: 97vw;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="video-tag">[2-Page PDF Template]</div>
-        
-        <h1>How I Went From $0<br>To Helping Clients Make $430k<br>Using Simple Documents<br>& No Sales Calls</h1>
-        
-        <p class="subtitle">Plus: Get my weekly 4-minute insights on landing High-Ticket clients without sales calls, read by 1,247+ consultants (unsubscribe anytime).</p>
-        
+        <div class="video-tag">[7-Minute Video]</div>
+
+        <h1>How I Turned My 1 Big Idea (Likes Ain't Cash)<br>Into $4 Million</h1>
+
+        <p class="subtitle">Plus: get daily 4-Minute insights read by 13,127+ on finding and turning their Big Ideas into $1-million-a-year client businesses (unsubscribe anytime).</p>
+
         <div class="form-container">
-            <script async data-uid="908bff4dc7" src="https://the3hourszen.kit.com/908bff4dc7/index.js"></script>
+            <form>
+                <input class="formkit-input" type="text" placeholder="Name..." />
+                <input class="formkit-input" type="email" placeholder="Email..." />
+                <button class="formkit-submit">Send Me The Likes Ain't Cash Newsletter</button>
+            </form>
         </div>
-        
+
         <div class="testimonials">
-            <div class="testimonial">
-                "Went from website designer to SaaS MVP - signed 15 clients using just this document" - <span class="author">Denis K., Product Developer</span>
-            </div>
-            
-            <div class="testimonial">
-                "Made $60k from email upsells alone" - <span class="author">Mark R., Coaching Service</span>
-            </div>
-            
-            <div class="testimonial">
-                "3 clients from dead leads I had" - <span class="author">Lisa K., Consultant</span>
-            </div>
+            <div class="testimonial">"Made $6k today." - <span class="author">Cyrus, 200 followers.</span></div>
+            <div class="testimonial">"Making around $30k/month now." - <span class="author">Tim, 10k followers.</span></div>
+            <div class="testimonial">"$110k this month." - <span class="author">Matias, 20k followers.</span></div>
+            <div class="testimonial">"10 days and have already cleared 25k. On track for 30-35k @ 90% profit margin" - <span class="author">Hamilton, 4.8k followers.</span></div>
         </div>
-        
+
         <div class="footer">
-            Your Business Name<br>
+            JK Molina LLC<br>
             <a href="#">Privacy Policy</a>
         </div>
     </div>
