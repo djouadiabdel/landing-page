@@ -3,148 +3,504 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Client Template - Get High-Ticket Clients</title>
+    <title>The $600K Revenue Gap in Legal Tech Demo Funnels | Joe Djouadi</title>
+    
+    <meta name="description" content="Why legal tech companies lose $600K annually in demo no-shows and post-demo ghosts—and the 3-layer system that recovers it.">
+    <meta name="keywords" content="legal tech conversion, demo optimization, email psychology, B2B SaaS, pre-decision systems">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXLERQJC3G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VXLERQJC3G');
+      
+      function trackVideoPlay() {
+        gtag('event', 'video_start', {
+          'event_category': 'VSL',
+          'event_label': 'Legal Tech Gap Analysis'
+        });
+      }
+      
+      function trackCTAClick(ctaType) {
+        gtag('event', 'cta_click', {
+          'event_category': 'Conversion',
+          'event_label': ctaType
+        });
+      }
+      
+      function trackVideoProgress(percentage) {
+        gtag('event', 'video_progress', {
+          'event_category': 'VSL',
+          'event_label': percentage + '% watched'
+        });
+      }
+    </script>
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            color: #1a202c;
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
+        
         .container {
-            max-width: 430px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 60px 10px;
-            text-align: center;
+            padding: 60px 20px;
         }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
         .video-tag {
-            font-size: 15px;
-            color: #6a6a6a;
-            margin-bottom: 25px;
-            padding: 3px 10px;
-            background: #fff;
-            border-radius: 5px;
-            display: block;
-            width: fit-content;
+            font-size: 13px;
+            font-weight: 600;
+            color: #e53e3e;
+            background: #fff5f5;
+            padding: 6px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            max-width: 750px;
             margin-left: auto;
             margin-right: auto;
         }
-        h1 {
+        
+        .meta-info {
+            font-size: 15px;
+            color: #718096;
+            margin-top: 15px;
+        }
+        
+        .meta-info span {
+            margin: 0 8px;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 40px 0;
+            background: #000;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+        
+        .content-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        
+        .content-section h2 {
             font-size: 26px;
             font-weight: 700;
-            color: #233047;
-            margin-bottom: 18px;
-            line-height: 1.3;
-            letter-spacing: 0.1px;
+            color: #1a202c;
+            margin-bottom: 20px;
         }
-        .subtitle {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 38px;
-            line-height: 1.5;
-            max-width: 370px;
-            margin-left: auto;
-            margin-right: auto;
+        
+        .bullet-points {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
         }
-        .form-container {
-            background: #ffffff;
-            padding: 32px 23px;
-            border-radius: 14px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.05);
-            margin-bottom: 38px;
+        
+        .bullet-points li {
+            padding: 12px 0 12px 32px;
+            position: relative;
+            font-size: 17px;
+            color: #2d3748;
+            line-height: 1.6;
         }
-        .formkit-input {
-            width: 100% !important;
-            padding: 13px !important;
-            font-size: 15px !important;
-            border-radius: 7px !important;
-            box-sizing: border-box !important;
-            margin-bottom: 13px !important;
-            border: 1px solid #ccc !important;
-            background: white !important;
+        
+        .bullet-points li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #48bb78;
+            font-weight: bold;
+            font-size: 20px;
         }
-        .formkit-submit {
-            width: 100% !important;
-            padding: 15px !important;
-            font-size: 15px !important;
-            background-color: #233047 !important;
-            border-radius: 7px !important;
-            font-weight: 600 !important;
-            color: white !important;
-            border: none !important;
-            cursor: pointer !important;
+        
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 50px 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
         }
-        .formkit-submit:hover {
-            background-color: #34495e !important;
-        }
-        .testimonials {
-            margin-top: 30px;
+        
+        .cta-section h2 {
+            font-size: 32px;
+            color: white;
             margin-bottom: 15px;
-        }
-        .testimonial {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 11px;
-            font-size: 14px;
-            line-height: 1.4;
-            max-width: 350px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .author {
             font-weight: 700;
-            color: #333;
-            font-style: normal;
         }
+        
+        .cta-section p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 18px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin: 10px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .secondary-cta {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .secondary-cta:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 25px;
+            background: #f7fafc;
+            border-radius: 10px;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #e53e3e;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        .highlight-box {
+            background: #fff5f5;
+            border-left: 4px solid #e53e3e;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .highlight-box p {
+            color: #2d3748;
+            font-size: 17px;
+            line-height: 1.7;
+            margin: 0;
+        }
+        
         .footer {
-            margin-top: 36px;
-            font-size: 12px;
-            color: #999;
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 14px;
+            color: #718096;
         }
+        
         .footer a {
-            color: #999;
+            color: #667eea;
             text-decoration: none;
         }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             .container {
-                padding: 22px 4px;
-                max-width: 99vw;
+                padding: 30px 15px;
             }
+            
             h1 {
-                font-size: 18px;
+                font-size: 28px;
             }
-            .form-container {
-                padding: 17px 12px;
-            }
+            
             .subtitle {
-                font-size: 14px;
-                max-width: 97vw;
+                font-size: 16px;
+            }
+            
+            .content-section {
+                padding: 25px 20px;
+            }
+            
+            .cta-section {
+                padding: 35px 20px;
+            }
+            
+            .cta-section h2 {
+                font-size: 24px;
+            }
+            
+            .cta-button {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .stat-number {
+                font-size: 28px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="video-tag">[2-Page Doc Template]</div>
-        <h1>How I Went From $0<br>To Helping Clients Make $430k<br>Using Simple Documents<br>& No Sales Calls</h1>
-        <p class="subtitle">Plus: Get my weekly 4-minute insights on landing High-Ticket clients without sales calls, read by 1200+ members (unsubscribe anytime).</p>
-        <div class="form-container">
-            <script async data-uid="908bff4dc7" src="https://the3hourszen.kit.com/908bff4dc7/index.js"></script>
+        <!-- Header -->
+        <div class="header">
+            <div class="video-tag">⚠️ FREE AUDIT BREAKDOWN</div>
+            <h1>The $600K Revenue Gap<br>Legal Tech Companies Don't See</h1>
+            <p class="subtitle">Why 48% of your demos no-show, 78% ghost post-demo, and 90% never reschedule—and the 3-layer system that closes these gaps without changing your product or sales process.</p>
+            <div class="meta-info">
+                <span>📊 8 Minutes</span>
+                <span>•</span>
+                <span>🎯 For Legal Tech CMOs</span>
+                <span>•</span>
+                <span>💰 Performance-Based Pricing</span>
+            </div>
         </div>
-        <div class="testimonials">
-            <div class="testimonial">"Went from website designer to SaaS MVP - signed 15 clients using just this document" - <span class="author">Denis K., Product Developer</span></div>
-            <div class="testimonial">"Made $60k from email upsells alone" - <span class="author">Mark R., Coaching Service</span></div>
-            <div class="testimonial">"3 clients from dead leads I had" - <span class="author">Lisa K., Consultant</span></div>
+        
+        <!-- Video Embed -->
+        <div class="video-container">
+<iframe 
+    id="vsl-video"
+    src="https://www.youtube.com/embed/AHiIxk1l8gI?enablejsapi=1&rel=0&modestbranding=1" 
+    title="The $600K Revenue Gap in Legal Tech Demo Funnels"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen
+    loading="lazy"
+    style="border: 0;"
+    onload="setupVideoTracking()">
+</iframe>
         </div>
+        
+        <!-- Key Points -->
+        <div class="content-section">
+            <h2>What You'll Learn in This Breakdown:</h2>
+            <ul class="bullet-points">
+                <li>The 3 predictable points where qualified prospects ghost—and why your current emails fail at each one</li>
+                <li>Why legal buyers evaluate software differently than typical B2B buyers (and why "Here's the Zoom link" causes 48% no-shows)</li>
+                <li>The exact psychology behind "I'll think about it" disappearances after demos</li>
+                <li>The Mitchell & Partners case study framework that answers what lawyers are thinking at 2am</li>
+                <li>The math: How 50 demo bookings turn into 5 customers vs. 12 customers with the right system</li>
+                <li>Why I only make my full fee if your system generates $400K+ in additional ARR</li>
+            </ul>
+        </div>
+        
+        <!-- The Gap -->
+        <div class="content-section">
+            <h2>The Problem (From 30+ Legal Tech Audits)</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-number">48%</span>
+                    <span class="stat-label">Demo No-Shows<br>(logistics emails, not validation)</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">78%</span>
+                    <span class="stat-label">Post-Demo Ghosts<br>(no objection removal)</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">90%</span>
+                    <span class="stat-label">Never Reschedule<br>(zero recovery system)</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">$600K</span>
+                    <span class="stat-label">ARR Lost Annually<br>(same demo volume)</span>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <p><strong>The pattern across 30+ audits:</strong> Legal tech optimizes marketing (more demos) and sales (better pitches). Nobody optimizes the EMAIL PSYCHOLOGY between "interested" and "closed." That's where $600K sits.</p>
+            </div>
+        </div>
+        
+        <!-- CTA -->
+        <div class="cta-section">
+            <h2>Want Me to Audit YOUR Funnel?</h2>
+            <p>Book a free 15-minute call. I'll show you exactly where the $600K is hiding in your demo funnel—the pre-demo gaps, post-demo leaks, and recovery holes.</p>
+            <p style="margin-bottom: 25px;"><strong>No pitch. Just showing you the gaps.</strong></p>
+            
+            <a href="https://calendly.com/djouadiabdelmouaiz/knowledgecall" 
+               class="cta-button" 
+               onclick="trackCTAClick('Book Audit Call')">
+                📅 Book Free 15-Min Audit
+            </a>
+            
+            <a href="mailto:joe@joedjouadi.com"
+               class="cta-button secondary-cta" 
+               onclick="trackCTAClick('Email Direct')">
+                ✉️ Email: joe@joedjouadi.com
+            </a>
+        </div>
+        
+        <!-- Who This Is For -->
+        <div class="content-section">
+            <h2>This Is For You If:</h2>
+            <ul class="bullet-points">
+                <li>You're a legal tech SaaS CMO, VP Marketing, or Head of Growth</li>
+                <li>You're booking 50-100+ demos per month</li>
+                <li>Your demo show rate is 40-60% (should be 70%+)</li>
+                <li>Your demo-to-close rate is 15-25% (should be 30-35%)</li>
+                <li>Your product and sales team are solid—but demos still aren't converting</li>
+                <li>You want performance-based pricing (I only make full fee if results hit)</li>
+            </ul>
+        </div>
+        
+        <!-- About -->
+        <div class="content-section">
+            <h2>About Joe Djouadi</h2>
+            <p style="margin-bottom: 15px;">I spent 18 months building conversion systems for B2B service businesses, then specialized in legal tech after auditing 30+ demo sequences and finding the same pre-decision psychology gaps in all of them.</p>
+            
+            <p style="margin-bottom: 15px;">Legal buyers don't respond to typical SaaS emails. They need peer proof, implementation validation, and story-driven sequences that address what they're thinking at 2am—not corporate feature lists.</p>
+            
+            <p style="margin-bottom: 15px;"><strong>What I don't do:</strong> Generic SaaS copywriting. Feature-benefit emails. Corporate decks.</p>
+            
+            <p><strong>What I build:</strong> Confession-driven pre-decision conversion systems. Story-driven validation. Peer proof from comparable firms. Implementation risk mitigation. Specific to legal buyer psychology.</p>
+            
+            <div class="highlight-box" style="margin-top: 25px;">
+                <p><strong>The guarantee:</strong> I only make my full $35-65K fee if your system generates $400K+ in additional ARR. $15-20K setup covers build. Performance bonuses tied to conversion milestones. Skin in the game.</p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
         <div class="footer">
-            Your Business Name<br>
-            <a href="#">Privacy Policy</a>
+            <p><strong>Joe Djouadi</strong> | Revenue Systems Architect</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:joe@joedjouadi.com">joe@joedjouadi.com</a> | 
+                <a href="https://joedjouadi.com">joedjouadi.com</a>
+            </p>
+            <p style="margin-top: 20px; font-size: 12px;">
+                © 2025 Joe Djouadi. All rights reserved.
+            </p>
         </div>
     </div>
+    
+    <!-- YouTube Tracking -->
+    <script>
+        function setupVideoTracking() {
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        }
+        
+var player;
+var progressTracked = {'25': false, '50': false, '75': false, '100': false};
+var trackingInterval; // ADD THIS LINE
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('vsl-video', {
+        events: {'onStateChange': onPlayerStateChange}
+    });
+}
+
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING) {
+        trackVideoPlay();
+        
+        // Clear any existing interval
+        if (trackingInterval) clearInterval(trackingInterval);
+        
+        trackingInterval = setInterval(function() {
+            if (player && player.getCurrentTime) {
+                var currentTime = player.getCurrentTime();
+                var duration = player.getDuration();
+                var percentPlayed = Math.round((currentTime / duration) * 100);
+                
+                if (percentPlayed >= 25 && !progressTracked['25']) {
+                    trackVideoProgress(25);
+                    progressTracked['25'] = true;
+                }
+                if (percentPlayed >= 50 && !progressTracked['50']) {
+                    trackVideoProgress(50);
+                    progressTracked['50'] = true;
+                }
+                if (percentPlayed >= 75 && !progressTracked['75']) {
+                    trackVideoProgress(75);
+                    progressTracked['75'] = true;
+                }
+                if (percentPlayed >= 95 && !progressTracked['100']) {
+                    trackVideoProgress(100);
+                    progressTracked['100'] = true;
+                }
+            }
+        }, 1000);
+    } else if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED) {
+        // Clear interval when paused or ended
+        if (trackingInterval) clearInterval(trackingInterval);
+    }
+}
+    </script>
 </body>
 </html>
+
